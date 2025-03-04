@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BackUp Drive D\\Fluke\\OneProject\\ExportExcelWorker\\ExportExcelWorker\\ExportExcelWorker.csproj": {}
+    "C:\\BackUp Drive D\\Fluke\\OneProject\\worker\\ExportExcelWorker\\ExportExcelWorker.csproj": {}
   },
   "projects": {
-    "C:\\BackUp Drive D\\Fluke\\OneProject\\ExportExcelWorker\\ExportExcelWorker\\ExportExcelWorker.csproj": {
+    "C:\\BackUp Drive D\\Fluke\\OneProject\\worker\\ExportExcelWorker\\ExportExcelWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BackUp Drive D\\Fluke\\OneProject\\ExportExcelWorker\\ExportExcelWorker\\ExportExcelWorker.csproj",
+        "projectUniqueName": "C:\\BackUp Drive D\\Fluke\\OneProject\\worker\\ExportExcelWorker\\ExportExcelWorker.csproj",
         "projectName": "ExportExcelWorker",
-        "projectPath": "C:\\BackUp Drive D\\Fluke\\OneProject\\ExportExcelWorker\\ExportExcelWorker\\ExportExcelWorker.csproj",
+        "projectPath": "C:\\BackUp Drive D\\Fluke\\OneProject\\worker\\ExportExcelWorker\\ExportExcelWorker.csproj",
         "packagesPath": "C:\\Users\\Tharadol.Kae\\.nuget\\packages\\",
-        "outputPath": "C:\\BackUp Drive D\\Fluke\\OneProject\\ExportExcelWorker\\ExportExcelWorker\\obj\\",
+        "outputPath": "C:\\BackUp Drive D\\Fluke\\OneProject\\worker\\ExportExcelWorker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -87,31 +87,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[9.0.1, 9.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[9.0.1, 9.0.1]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[9.0.1, 9.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

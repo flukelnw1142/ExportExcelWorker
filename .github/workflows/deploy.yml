@@ -1,0 +1,44 @@
+﻿name: Deploy ASP.NET Core App on Server
+
+on:
+  push:
+    branches: 
+      - "main"     # ✅ Production
+      - "release"  # ✅ Test Site
+
+jobs:
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Restore dependencies
+        run: dotnet restore ExportExcelWorker/ExportExcelWorker.sln
+
+      - name: Build
+        run: dotnet build ExportExcelWorker/ExportExcelWorker.sln --configuration Release --no-restore
+
+      - name: Publish to Production
+        run: dotnet publish ExportExcelWorker/ExportExcelWorker.csproj --configuration Release --output C:\Project\FN_Portal\WorkerService\ --no-build
+
+  deploy-test:
+    if: github.ref == 'refs/heads/release'
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Restore dependencies
+        run: dotnet restore ExportExcelWorker/ExportExcelWorker.sln
+
+      - name: Build
+        run: dotnet build ExportExcelWorker/ExportExcelWorker.sln --configuration Release --no-restore
+
+      - name: Publish to Test Site
+        run: dotnet publish ExportExcelWorker/ExportExcelWorker.csproj --configuration Release --output C:\Deploy\RoomBooking\Back_Test\ --no-build
+
+

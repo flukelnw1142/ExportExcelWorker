@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExportExcelWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d32b924b1073eab5b64fe5a352d21f1033620716")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExportExcelWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExportExcelWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
